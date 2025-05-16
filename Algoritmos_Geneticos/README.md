@@ -59,3 +59,12 @@ Resumindo:
 - Se é uma solução aceitável e se pode ser utilizada para a evolução.
 
 A forma exata da função de avaliação depende do contexto do problema: pode ser uma função a ser maximizada (como por exemplo, lucro, acurácia ou eficiência), ou transformada em um critério de maximização, mesmo sendo em problemas de minimização, como por exemplo, erro (erro quadrático médio) ou custo (função de custo/perda de uma rede neural).
+
+### Crossover/reprodução (Cruzamento)
+
+Na parte de cruzamento de um algoritmo genético, basicamente uma parte do gene de um indivíuo é combinado com uma parte do gene de outro indivíduo, com isto é gerado um descendente (filho) para a próxima geração com as características dos 2 indivíduos. 
+
+![crossover](readme_imgs/image-1.png)
+
+- É definido um ponto de corte que definirá quais **genes** serão cruzados com os de outro indivíduo.
+- Combina pedaços do cromossomo de dois genitores gerando filhos mais aptos e consequentemente com o passar das gerações a população tende a evoluir.

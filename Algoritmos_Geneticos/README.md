@@ -68,3 +68,20 @@ Na parte de cruzamento de um algoritmo genético, basicamente uma parte do gene 
 
 - É definido um ponto de corte que definirá quais **genes** serão cruzados com os de outro indivíduo.
 - Combina pedaços do cromossomo de dois genitores gerando filhos mais aptos e consequentemente com o passar das gerações a população tende a evoluir.
+
+### Mutação
+
+- A mutação cria diversidade, mudando aleatoriamente **genes** dentro de indivíduos e é aplicada de forma **menos frequente que a reprodução**, como na natureza.
+- Possui uma taxa associada a uma probabilidade extremamente baixa para alterar um gene.
+
+### Seleção dos indivíduos
+
+- Operadores genéticos são utilizados em indivíduos selecionados dentro da população.
+- Indivíduos mais **aptos (função de avaliação maior)** serão selecionados mais frquentemente que os menos aptos, **características dos melhores deve predominar na nova população**.
+- - Os indivíduos menos aptos não serão excluídos da próxima geração, porém pais menos aptos gerarão menos descendentes.
+- Deve simular o mecanismo de seleção natural que atua sobre as espécies biológicas: **pais mais capazes geram mais filhos** e **pais menos aptos também geram descendentes**.
+- Privilegiar **indivíduos com função de avaliação alta, sem desprezar completamente com função baixa**.
+
+Em resumo, para a seleção iremos considerar os indivíduos que possuem uma função de avaliação maior, mas também não iremos ignorar os indivíduos que possuem uma função de avaliação baixa.
+
+Se deixar somente os melhores indivíduos, a população tenderá a ser composta de elementos cada vez mais semelhantes e **faltará diversidade**. Por mais que o indivíduo com função de avaliação mais baixa não tenha uma solução boa, de certa forma este indivíduo ainda pode contribuir para o ganho global do sistema.
